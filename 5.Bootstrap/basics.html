@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Basics</title>
+	<!-- using Bootstarp 3 here -->
+
+	<!-- using local file -->
+<!-- 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+ -->	<!-- using external link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+
+		.orange {
+			background: orange;
+			border: 1px dashed red;
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Koffee</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1>This is a Jumbotron</h1>
+			<p>Something..Something..Something..Something..</p>
+			<button class="btn btn-success btn-lg">Hi There!</button>
+		</div>
+
+		<h1>Bootsrap Basics</h1>
+		<button class="btn btn-default">Click Me!</button>
+		<button class="btn btn-danger">Click Me!</button>
+		<button class="btn btn-success">Click Me!</button>
+		<button class="btn btn-success btn-xs" disabled="disabled">Click Me!</button>
+		<a class="btn btn-success btn-lg" href="https://getbootstrap.com">Bootsrap Docs</a>
+
+		<!-- Form Group -->
+
+		<form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputFile">File input</label>
+		    <input type="file" id="exampleInputFile">
+		    <p class="help-block">Example block-level help text here.</p>
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Check me out
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+
+		<!-- Inline Form -->
+
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Name</label>
+		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail2">Email</label>
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+		  </div>
+		  <button type="submit" class="btn btn-default">Send invitation</button>
+		</form>
+
+		<div class="row">
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+			<div class="col-lg-1 pink">COL LG 1</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div class="col-lg-6 orange">First Half</div>
+					<div class="col-lg-6 orange">Other Half</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 pink">COL LG 4</div>
+			<div class="col-md-3 col-sm-6 pink">
+				<div class="row">
+					<div class="col-lg-3 orange">ONE</div>
+					<div class="col-lg-3 orange">TWO</div>
+					<div class="col-lg-3 orange">THREE</div>
+					<div class="col-lg-3 orange">FOUR</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

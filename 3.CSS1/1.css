@@ -1,0 +1,113 @@
+/*Normal Color Names*/
+/*h1 {
+	color: green;
+}
+
+li {
+	color: blue;
+}
+
+h4 {
+	color: yellow;
+}*/
+
+/*Hexa Deximal Color*/
+/* #_ _ _ _ _ _; 2 space for red ,2 for green ,2 for blue || e.g. AB1234*/
+
+h1 {
+	color: #AF3467;
+}
+
+/* RGB rgb(red, green, blue); each value from 0-1*/
+
+h4 {
+	color: rgb(134,235,67);
+}
+
+/* RGBA rgba(red, green, blue, alpha); same as rgb but with alpha for transparency value ranges from 0-1*/
+
+h3 {
+	color: rgba(145, 115, 67, .7);
+}
+
+h4 {
+	background: rgb(212, 111, 112);
+}
+
+body {
+	background: pink;
+	/*background: url(https://cdn.pixabay.com/photo/2016/03/03/22/29/wood-1235162_960_720.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+/*border
+width
+color
+style*/
+
+/*Selector*/
+/*Element*/
+h1 {
+	/*border-color: red;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 5px solid red;
+}
+
+li {
+	border: 2px solid red;
+}
+
+/*ID Selector*/
+
+#finish {
+	background: yellow;
+}
+
+/*Class Selector*/
+
+.completed {
+	text-decoration: line-through;
+}
+
+/*More Selector*/
+
+/*Star selects whole elements of a page*/
+
+* {
+	border: 1px solid red;
+}
+
+/*Decendant selects a decendant of an element*/
+
+li a {
+	color: green;
+}
+
+/*Adjacent selects elemnts adjacent to an element*/
+
+h4 + ul {
+	border: 5px solid orange;
+}
+
+/*Attribute selector selects element with specified attribute*/
+
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/*nth of type selects the element after the given number of times*/
+
+ul:nth-of-type(3) {
+	background: purple;
+}
+
+li:nth-of-type(3) {
+	background: green;
+}
+
+li:nth-of-type(even) {
+	background: orange;
+}
