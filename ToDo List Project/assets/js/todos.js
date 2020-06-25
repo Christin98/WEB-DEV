@@ -29,3 +29,13 @@ $("li").click(function() {
     // // // $(this).css("text-decoration", "line-through");
     $(this).toggleClass("completed");
 });
+
+//Click on X to delete Todo
+$("span").click(function(event) {
+    // alert("clicked on span");
+    // $(this).parent().remove();
+    $(this).parent().fadeOut(500, function() {
+        $(this).remove();
+    });
+    event.stopPropagation();
+});
